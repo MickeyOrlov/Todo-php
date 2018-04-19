@@ -1,32 +1,24 @@
 <?php
+$app->post('/createTask/{$string}', function (Request $request, Response $response, array $args) {
 
+}); // создать Таск
 
-$app->post('/createTask/{string}', function (Request $request, Response $response, array $args) {
+$app->delete('/delTask/{$id}', function (Request $request, Response $response, array $args) {
 
-});
+}); // Удалить Таск
 
-$app->delete('/delTask/{id}', function (Request $request, Response $response, array $args) {
+$app->put('/editCompletedTask/{$id}', function (Request $request, Response $response, array $args) {
 
-});
+}); //Завершить Таск
 
-$app->put('/completedTask/{id}', function (Request $request, Response $response, array $args) {
+$app->delete('/delCompleted/{$id}', function (Request $request, Response $response, array $args) {
 
-});
+}); //Удалить завершенный Таск
 
-$app->delete('/delCompleted/{id}', function (Request $request, Response $response, array $args) {
+$app->get('/getAll', function (Request $request, Response $response, array $args) {
 
-});
+}); //Выбрать все Таски
+$app->get('/getAllByUnState/{}', function (Request $request, Response $response, array $args) {
 
-$app->put('/unCompleted/{id}', function (Request $request, Response $response, array $args) {
+}); //Выбрать состояния завершенные или не завершенные
 
-});
-
-$app->get('/getAll/{}', function (Request $request, Response $response, array $args) {
-
-});
-$app->get('/getAllByUnCompleted/{}', function (Request $request, Response $response, array $args) {
-
-});
-$app->get('/getAllByCompleted/{}', function (Request $request, Response $response, array $args) {
-
-});
