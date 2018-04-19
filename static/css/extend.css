@@ -1,0 +1,63 @@
+.button, .button:link, .button:hover, .button:visited {
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+}
+.destroy:after {
+  display: inline-block;
+  margin-top: 10px;
+}
+.toggle-link {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+input.edit+.destroy {
+  display: block !important;
+}
+#clear-completed,
+html #clear-completed:active {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  visibility: hidden;
+  position: relative;
+}
+
+#clear-completed::after {
+  display: none;
+}
+
+.clear-completed, .clear-completed:link, .clear-completed:hover, .clear-completed:visited {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: #777;
+}
+.clear-completed:hover {
+  text-decoration: underline;
+}
+#todo-list li.editing .edit {
+  padding-top: 12px;
+}
+
+.hidden {
+  display: none !important;
+}
+.hidden-link, .hidden-link:link, .hidden-link:hover, .hidden-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#filters .selected {
+  font-weight: bold;
+}

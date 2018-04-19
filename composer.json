@@ -1,0 +1,15 @@
+{
+    "name": "php todo",
+    "authors": [
+        {
+            "name": "Михаил Орлов",
+            "email": "mihail.orlov@webpp.ru"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.0",
+        "j4mie/idiorm": "^1.5",
+        "j4mie/paris": "^1.5",
+        "twig/twig": "1.*"
+    }
+}
