@@ -19,7 +19,7 @@ class ModelTask {
     public function getAll() {
         
     }
-    public function getAllByUnState() {
+    public function getAllByState($active) {
         
     }
 

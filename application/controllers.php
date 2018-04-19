@@ -18,7 +18,7 @@ $app->delete('/delCompleted/{$id}', function (Request $request, Response $respon
 $app->get('/getAll', function (Request $request, Response $response, array $args) {
 
 }); //Выбрать все Таски
-$app->get('/getAllByUnState/{}', function (Request $request, Response $response, array $args) {
+$app->get('/getAllByUnState/{$active}', function (Request $request, Response $response, array $args) {
 
 }); //Выбрать состояния завершенные или не завершенные
 
